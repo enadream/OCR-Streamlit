@@ -6,7 +6,7 @@
 An advanced application built with Streamlit that provides a comprehensive suite of tools for PDF processing. It features a powerful OCR pipeline for extracting and correcting content from documents and a synthetic data generator for creating realistic scanned-document artifacts.
 
 **Author:** enadream
-**Date:** June, 2025
+**Date:** June 15, 2025
 
 ---
 
@@ -69,6 +69,7 @@ Before starting, ensure you have **Python 3.11+** and **Git** installed on your 
 
 Instructions are provided for Linux, Windows, and macOS.
 
+<details>
 <summary><strong>🐧 Linux (Debian/Ubuntu/Arch) Installation</strong></summary>
 
 1.  **Clone the Repository**
@@ -91,9 +92,9 @@ Instructions are provided for Linux, Windows, and macOS.
         sudo pacman -S tesseract poppler
         ```
 4.  **Install Python Packages**
-    This single command installs the project and all required Python libraries.
+    This command installs all required Python libraries from the `requirements.txt` file.
     ```bash
-    pip install -e .
+    pip install -r requirements.txt
     ```
 5.  **Download Tesseract Language Models**
     * **On Debian/Ubuntu:**
@@ -110,6 +111,9 @@ Instructions are provided for Linux, Windows, and macOS.
     pip install https://huggingface.co/turkish-nlp-suite/tr_core_news_lg/resolve/main/tr_core_news_lg-1.0-py3-none-any.whl
     ```
 
+</details>
+
+<details>
 <summary><strong>🪟 Windows Installation</strong></summary>
 
 1.  **Clone the Repository**
@@ -126,9 +130,9 @@ Instructions are provided for Linux, Windows, and macOS.
     * **Tesseract:** Download and run the official installer from [Tesseract at UB Mannheim](https://github.com/UB-Mannheim/tesseract/wiki). During installation, make sure to check the box to "Add Tesseract to system PATH" and select the language packs for English and Turkish.
     * **Poppler:** Download the latest [Poppler for Windows](https://github.com/oschwartz10612/poppler-windows/releases/) binaries. Unzip the folder and add the full path to the `bin` directory (e.g., `C:\Users\YourUser\Downloads\poppler-24.02.0\Library\bin`) to your system's PATH environment variable.
 4.  **Install Python Packages**
-    This single command installs the project and all required Python libraries.
+    This command installs all required Python libraries from the `requirements.txt` file.
     ```powershell
-    pip install -e .
+    pip install -r requirements.txt
     ```
 5.  **Download spaCy AI Models**
     ```powershell
@@ -136,6 +140,9 @@ Instructions are provided for Linux, Windows, and macOS.
     pip install https://huggingface.co/turkish-nlp-suite/tr_core_news_lg/resolve/main/tr_core_news_lg-1.0-py3-none-any.whl
     ```
 
+</details>
+
+<details>
 <summary><strong>🍎 macOS Installation</strong></summary>
 
 1.  **Clone the Repository**
@@ -155,15 +162,17 @@ Instructions are provided for Linux, Windows, and macOS.
     ```
     *Note: The standard Tesseract formula on Homebrew includes all language packs.*
 4.  **Install Python Packages**
-    This single command installs the project and all required Python libraries.
+    This command installs all required Python libraries from the `requirements.txt` file.
     ```bash
-    pip install -e .
+    pip install -r requirements.txt
     ```
 5.  **Download spaCy AI Models**
     ```bash
     pip install https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1.tar.gz
     pip install https://huggingface.co/turkish-nlp-suite/tr_core_news_lg/resolve/main/tr_core_news_lg-1.0-py3-none-any.whl
     ```
+
+</details>
 
 ---
 
@@ -177,7 +186,7 @@ After completing the installation, you can run the application with a single com
 source .venv/bin/activate
 
 # Run the app
-python -m app.main
+streamlit run app/ui/main_ui.py
 ```
 
 #### On Windows
@@ -186,7 +195,7 @@ python -m app.main
 .\.venv\Scripts\Activate.ps1
 
 # Run the app
-python -m app.main
+streamlit run app/ui/main_ui.py
 ```
 
 This will launch the Streamlit application in a new browser tab.
@@ -195,7 +204,6 @@ This will launch the Streamlit application in a new browser tab.
 ```
 project/
 |---- requirements.txt
-|---- setup.py
 |---- README.md
 |---- app/
     |---- __init__.py
@@ -205,7 +213,7 @@ project/
     |   |---- config.py
     |   |---- image_processor.py
     |   |---- layout_detector.py
-    |   |---- ocr_extraction.py
+    |   |---- ocr_extractor.py
     |   |---- pdf_handler.py
     |---- data/
     |---- ui/
