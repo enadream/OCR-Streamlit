@@ -186,7 +186,7 @@ After completing the installation, you can run the application with a single com
 source .venv/bin/activate
 
 # Run the app
-streamlit run app/ui/main_ui.py
+python -m app.main
 ```
 
 #### On Windows
@@ -195,7 +195,7 @@ streamlit run app/ui/main_ui.py
 .\.venv\Scripts\Activate.ps1
 
 # Run the app
-streamlit run app/ui/main_ui.py
+python -m app.main
 ```
 
 This will launch the Streamlit application in a new browser tab.
