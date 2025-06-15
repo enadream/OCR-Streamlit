@@ -73,7 +73,7 @@ Instructions are provided for Linux, Windows, and macOS.
 
 1.  **Clone the Repository**
     ```bash
-    git clone [https://github.com/enadream/ocr-streamlit.git](https://github.com/enadream/ocr-streamlit.git)
+    git clone https://github.com/enadream/ocr-streamlit.git
     cd ocr-streamlit
     ```
 2.  **Create and Activate a Virtual Environment**
@@ -114,7 +114,7 @@ Instructions are provided for Linux, Windows, and macOS.
 
 1.  **Clone the Repository**
     ```powershell
-    git clone [https://github.com/enadream/ocr-streamlit.git](https://github.com/enadream/ocr-streamlit.git)
+    git clone https://github.com/enadream/ocr-streamlit.git
     cd ocr-streamlit
     ```
 2.  **Create and Activate a Virtual Environment**
@@ -140,7 +140,7 @@ Instructions are provided for Linux, Windows, and macOS.
 
 1.  **Clone the Repository**
     ```bash
-    git clone [https://github.com/enadream/ocr-streamlit.git](https://github.com/enadream/ocr-streamlit.git)
+    git clone https://github.com/enadream/ocr-streamlit.git
     cd ocr-streamlit
     ```
 2.  **Create and Activate a Virtual Environment**
