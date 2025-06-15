@@ -1,0 +1,18 @@
+# Core OCR and Image Processing
+opencv-python
+pytesseract
+easyocr
+pdf2image
+Pillow
+numpy
+
+# Streamlit UI
+streamlit
+
+# AI-Based Text Correction
+spacy
+contextualSpellCheck
+
+# spaCy Model (to be downloaded separately)
+# After installing the packages above, run:
+# python -m spacy download en_core_web_sm
